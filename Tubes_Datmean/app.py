@@ -45,7 +45,7 @@ if st.button("Predict"):
 #def run_streamlit():
     #os.system('streamlit run app.py --server.port 8501')
 
-run_streamlit()
+#run_streamlit()
 
 #public_url = ngrok.connect(addr='8501')
 #print(f'Streamlit app is live at: {public_url}')
