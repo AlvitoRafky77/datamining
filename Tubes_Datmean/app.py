@@ -2,8 +2,13 @@ import streamlit as st
 import pickle
 import pandas as pd
 
+#from pyngrok import ngrok
 import threading
 import os
+
+# Load the saved model
+#with open('model.pkl', 'rb') as f:
+    #model = pickle.load(f)
 
 # Streamlit app title
 st.title("Predict with Machine Learning Model")
@@ -37,10 +42,10 @@ if st.button("Predict"):
         st.error(f"An error occurred: {str(e)}")
 
 
-def run_streamlit():
-    os.system('streamlit run app.py --server.port 8501')
+#def run_streamlit():
+    #os.system('streamlit run app.py --server.port 8501')
 
 run_streamlit()
 
-public_url = ngrok.connect(addr='8501')
-print(f'Streamlit app is live at: {public_url}')
+#public_url = ngrok.connect(addr='8501')
+#print(f'Streamlit app is live at: {public_url}')
