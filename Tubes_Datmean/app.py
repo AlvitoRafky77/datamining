@@ -5,10 +5,6 @@ import pandas as pd
 import threading
 import os
 
-# Load the saved model
-with open('model.pkl', 'rb') as f:
-    model = pickle.load(f)
-
 # Streamlit app title
 st.title("Predict with Machine Learning Model")
 
